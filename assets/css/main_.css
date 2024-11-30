@@ -313,10 +313,6 @@ h6 {
     left: -100%;
     visibility: visible;
   }
-
-  .footer-newsletter img{
-    width: 14%;
-  }
 }
 
 /* Mobile Navigation */
@@ -595,7 +591,7 @@ h6 {
 
 .footer .copyright {
   padding: 25px 0;
-  border-top: 1px solid #000;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -605,10 +601,6 @@ h6 {
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
-}
-
-.footer-newsletter img{
-  width: 10%;
 }
 
 /*--------------------------------------------------------------
@@ -654,12 +646,12 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 127px;
+  bottom: 15px;
   z-index: 99999;
   background-color: var(--accent-color);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
   transition: all 0.4s;
 }
 
@@ -679,73 +671,12 @@ h6 {
   opacity: 1;
 }
 
-
-.scroll-whatsapp {
-  position: fixed;
-    visibility: visible;
-    right: 6px;
-    bottom: 13px;
-    z-index: 9999;
-    background-color: green;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: all 0.4s;
-}
-
-.scroll-whatsapp i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
-}
-
-.scroll-whatsapp:hover {
-  background-color: green;
-  color: #fff;
-}
-
-.scroll-whatsapp.active {
-  visibility: visible;
-  opacity: 1;
-}
-.scroll-call {
-  position: fixed;
-    visibility: visible;
-    left: 6px;
-    bottom: 13px;
-    z-index: 9999;
-    background-color: #f2ce00;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: all 0.4s;
-}
-
-.scroll-call i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
-}
-
-.scroll-call:hover {
-  background-color: f2ce00;
-  color: #fff;
-}
-
-.scroll-call.active {
-  visibility: visible;
-  opacity: 1;
-}
-
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
-  }
-  .footer-newsletter img{
-    width: 20%;
   }
 }
 
@@ -1287,16 +1218,11 @@ section,
     font-size: 14px;
     margin: 0 5px;
   }
-  .footer-newsletter img{
-    width: 30%;
-  }
 }
 
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
-  border: 1px solid #000;
-  margin: 2px;
 }
 
 .portfolio .portfolio-content img {
@@ -1765,6 +1691,12 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+.starter-section {
+  /* Add your styles here */
+}
+
+
+
 
 /*haeder css*/
 
