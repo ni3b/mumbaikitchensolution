@@ -443,10 +443,6 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
-
-  .face p {
-    font-size: 13px;
-}
 }
 
 /*--------------------------------------------------------------
@@ -751,11 +747,6 @@ h6 {
   .footer-newsletter img{
     width: 20%;
   }
-
-  .sitename {
-    font-size: 15px!important;
-}
-  
 }
 
 /*--------------------------------------------------------------
@@ -876,21 +867,18 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 65px;
-  font-weight: 900;
-  color: #000;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .hero p {
   margin: 10px 0 0 0;
-  font-size: 20px;
-  color: #000;
-  font-weight: 400;
-  padding: 0 160px 0px 0px;
+  font-size: 24px;
+  color: var(--heading-color);
 }
 
 .hero .btn-get-started {
-  color: #000000;
+  color: var(--default-color);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
@@ -899,7 +887,7 @@ section,
   margin: 30px 0 0 0;
   border-radius: 4px;
   transition: 0.5s;
-  border: 2px solid #000;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
 .hero .btn-get-started:hover {
@@ -1302,14 +1290,6 @@ section,
   .footer-newsletter img{
     width: 30%;
   }
-  .hero h2 {
-    text-align: center;
-  }
-  .hero p{
-    padding: 0;
-    text-align: center;
-  }
-
 }
 
 .portfolio .portfolio-content {
@@ -1789,8 +1769,7 @@ section,
 /*haeder css*/
 
 .sitename i{
-  font-size: 38px;
-  text-align: center;
+  font-size: 80px;
 }
 .face p{
   font-size: 16px;

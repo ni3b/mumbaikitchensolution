@@ -1,0 +1,196 @@
+.footer .footer-about .logo img {
+    max-height: 150px;
+    margin-right: 6px;
+}
+@media only screen and (max-width: 768px) {
+  .header .logo img {
+      max-height: 68px;
+      margin-right: 149px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-space {
+  position: relative;
+  flex: 1 1 calc(33.333% - 40px);
+  margin: 10px;
+  height: 300px; /* Adjust height as needed */
+  perspective: 1000px; /* Perspective for flip effect */
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-space:hover .card {
+  transform: rotateY(-180deg);
+}
+
+.face {
+  border-radius: 10px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+  background-color: var(--accent-color); /* Adjust color if needed */
+  padding: 65px 20px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.face h1 {
+  padding: 0;
+}
+
+.face.front {
+  text-align: center;
+  z-index: 20;
+  transform: rotateY(0deg);
+}
+
+.face.back {
+  transform: rotateY(180deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .card-space {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-space {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .face p {
+    font-size: 13px !important;
+  }
+}
+
+/* Service css */
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext');
+
+.service-page {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+min-height: 10vh;
+font-family: 'Roboto', sans-serif;
+}
+
+.service-page .service-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.service-page .box {
+position: relative;
+width: 350px;
+padding: 40px;
+background: #f2ce00;
+box-shadow: 0 15px 25px rgba(0, 0, 0, .1);
+border-radius: 15px;
+margin: 20px;
+box-sizing: border-box;
+overflow: hidden;
+text-align: center;
+}
+
+.service-page .box:before {
+content: '';
+width: 50%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: rgba(255, 255, 255, .2);
+z-index: 2;
+pointer-events: none;
+}
+
+.service-page .box .icon {
+position: relative;
+width: 80px;
+height: 80px;
+color: #fff;
+background: #000076;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 55px auto;
+border-radius: 20%;
+font-size: 50px;
+font-weight: normal;
+transition: 2s;
+padding: 10px;
+}
+
+.service-page .box .icon i {
+padding: 12px;
+}
+
+.service-page .box .icon {
+box-shadow: 0 0 0 0 #F5F5DC;
+background: #F5F5DC;
+}
+
+.service-page .box:hover .icon {
+box-shadow: 0 0 0 400px #76D7C4;
+}
+
+.service-page .box .content {
+position: relative;
+z-index: 1;
+transition: 1.5s;
+}
+
+.service-page .box:hover .content {
+color: #fff;
+}
+
+.service-page .box .content h3 {
+font-size: 20px;
+margin: 10px 0;
+padding: 0;
+text-align: center;
+}
+
+.service-page .box .content p {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.service-page a {
+display: inline-block;
+padding: 10px 25px;
+background: #fff;
+border-radius: 10px;
+text-decoration: none;
+color: #000;
+font-weight: 500;
+margin-top: 20px;
+box-shadow: 5px 2px 5px rgba(0, 0, 0, .2);
+border: 1px solid green;
+}

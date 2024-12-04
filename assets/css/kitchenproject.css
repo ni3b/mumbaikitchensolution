@@ -25,7 +25,7 @@
   position: relative;
   flex: 1 1 calc(33.333% - 40px);
   margin: 10px;
-  height: 300px; /* Adjust height as needed */
+  height: 350px; /* Adjust height as needed */
   perspective: 1000px; /* Perspective for flip effect */
 }
 
@@ -37,15 +37,15 @@
   transform-style: preserve-3d;
 }
 
-.card-space:hover .card {
+/* .card-space:hover .card {
   transform: rotateY(-180deg);
-}
+} */
 
 .face {
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
-  background-color: var(--accent-color); /* Adjust color if needed */
-  padding: 65px 20px;
+  background-color: #f2ce00; /* Adjust color if needed */
+  padding: 40px 20px;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -55,16 +55,21 @@
 .face h1 {
   padding: 0;
 }
-
+.sitename{
+  font-size: 18px;
+}
+.back p{
+  font-size: 18px;
+}
 .face.front {
   text-align: center;
   z-index: 20;
   transform: rotateY(0deg);
 }
 
-.face.back {
+/* .face.back {
   transform: rotateY(180deg);
-}
+} */
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
