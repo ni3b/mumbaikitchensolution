@@ -42,7 +42,23 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+            <ul class="sub-menu">
+
+                <li><a href="gas-hob-repair.html">Gas Hob Repair</a></li>
+
+                <li><a href="gas-stove-repair.html">Gas Stove Repair</a></li>
+
+                <li><a href="gas-cooktop-repair.html">Gas Cooktop Repair</a></li>
+
+                <li><a href="chimney-repair.html">Chimney Repair</a></li>
+
+                <li><a href="copper-gas-pipeline.html">Copper Gas Pipeline</a></li>
+
+              </ul>
+
+          </li>
           <li><a href="#portfolio">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -872,32 +888,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/owl.carousel.js"></script>
+  <script src="assets/js/timerowlcarousel.js"></script>
   
-  <script>
-    $(document).ready(function(){
-      $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            dots: false,
-            autoplay: true, // Enable automatic scrolling
-            autoplayTimeout: 1000, // Delay between slides (1 second)
-            autoplaySpeed: 800, // Speed of the animation (0.8 seconds)
-            autoplayHoverPause: false, // Keep animating even when hovered
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 5
-                }
-            }
-        });
-    });
-</script>
 
 </body>
 
