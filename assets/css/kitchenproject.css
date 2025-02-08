@@ -23,8 +23,8 @@
 
 .card-space {
   position: relative;
-  flex: 1 1 calc(33.333% - 40px);
-  margin: 10px;
+  /* flex: 1 1 calc(33.333% - 40px); */
+  margin-bottom: 25px;
   height: 350px; /* Adjust height as needed */
   perspective: 1000px; /* Perspective for flip effect */
 }
@@ -44,7 +44,7 @@
 .face {
   border-radius: 0px;
   box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
-  background-color: #f2ce00; /* Adjust color if needed */
+  background-color: #d6d6d6; /* Adjust color if needed */
   padding: 40px 20px;
   position: absolute;
   height: 100%;
@@ -56,11 +56,9 @@
   padding: 0;
 }
 .sitename{
-  font-size: 14px;
-}
-
-.back p{
-  font-size: 18px;
+  font-size: 25px;
+    text-align: center;
+    justify-content: center;
 }
 .face.front {
   text-align: center;
@@ -73,11 +71,11 @@
 } */
 
 /* Responsive adjustments */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .card-space {
     flex: 1 1 calc(50% - 20px);
   }
-}
+} */
 
 @media (max-width: 600px) {
   .card-space {

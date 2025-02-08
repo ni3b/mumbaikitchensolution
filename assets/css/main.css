@@ -863,7 +863,7 @@ section,
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 15px;
 }
 
@@ -1057,6 +1057,17 @@ section,
   font-size: 15px;
   margin: 0;
   padding: 0;
+}
+
+.contact-btn{
+  border: 1px solid #ffcc00;
+  background: #ffcc00;
+  padding: 10px 8px;
+  border-radius: 5px;
+}
+.contact-btn a{
+  color: #000000;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -1292,6 +1303,8 @@ section,
   border-radius: 6px;
   position: relative;
   z-index: 1;
+  max-height: 280px;
+  min-height: 280px;
 }
 
 .testimonials .swiper-wrapper {
@@ -1912,7 +1925,6 @@ section,
   }
 }
   
-}
 
 /* banner */
 
