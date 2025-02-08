@@ -83,11 +83,6 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .face p {
-    font-size: 13px !important;
-  }
-}
 
 /* Service css */
 @import url('https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext');
