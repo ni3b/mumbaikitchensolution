@@ -179,6 +179,133 @@ h6 {
 .scrolled .header {
   --background-color: rgb(255 255 255);
 }
+.fixed-top{
+  margin-top: 47px;
+}
+/* header top */
+
+.header-top {
+  position: relative;
+  padding: 14px 0 14px 0;
+}
+.header-top-contact ul {
+  display: flex;
+  margin: 0;
+  padding: 0 2px;
+}
+.fixed-top-header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: #f2ce00;
+}
+.header-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.header-top-contact ul li{
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-top-contact ul li span{
+  font-size: 13px;
+  font-weight: 500;
+}
+.header-top-social a{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 3px;
+}
+.header-top-social span{
+  font-size: 13px;
+  font-weight: 500;
+}
+.header-top-social a span{
+  font-size: 13px;
+  font-weight: 500;
+}
+.header-center-text p{
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-center-text p a{
+  font-size: 14px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-center-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-top-contact a {
+  color: #fff;
+  font-weight: 500;
+}
+.header-top-contact a i {
+  color: #fff;
+}
+.header-top-social span{
+  color: #fff;
+}
+.header-top-social a{
+  color: #fff;
+}
+
+.contact-banner-btn{
+  border: 1px solid #f2ce00;
+    background: #f2ce00;
+    padding: 10px 8px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-banner-btn a{
+  border: 1px solid #f2ce00;
+    background: #f2ce00;
+    padding: 10px 60px;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.footer-about{
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .fixed-top {
+    margin-top: 107px;
+}
+.banner-main{
+  margin-top: 125px;
+}
+.contact-banner-btn a {
+  padding: inherit;
+}
+.contact-banner-btn{
+  font-size: 13px;
+}
+.mobile-nav-active .navmenu>ul {
+  margin-top: 67px;
+}
+}
+@media (max-width: 991px) {
+  .header-top-contact ul, .header-top-right {
+      justify-content: center;
+  }
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -2053,7 +2180,21 @@ padding-top: 25px;
 }
 
 .booking-form .input {
-  padding: 16px;
+  padding: 5px 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+}
+.booking-form select {
+  padding: 5px 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+}
+.booking-form select option {
+  padding: 5px 16px;
   width: 100%;
   margin-bottom: 10px;
   border: 1px solid #ffffff;
