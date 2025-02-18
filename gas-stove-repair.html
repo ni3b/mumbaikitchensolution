@@ -111,7 +111,7 @@
               </ul>
 
           </li>
-          <li><a href="index.html">Gallery</a></li>
+          <li><a href="index.html#portfolio">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
           <button class="contact-btn"><a href="contact.html">Book Visit</a></button>
         </ul>
@@ -186,46 +186,46 @@
                     <div class="HeadingT1">
                         <h5>Book an Appointment</h5>
                     </div>
-                    <form class="booking-form">
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <input type="text" class="form-control input" id="inputEmail3" placeholder="Name"> 
-                            </div>
-                          </div>
-                        <div class="row mb-3">
+                    <form class="booking-form" action="https://vsautomation.tech/assets/mail/send-email.php" method="post">
+                      <div class="row mb-3">
                           <div class="col-sm-12">
-                            <input type="number" class="form-control input" id="inputEmail3" placeholder="Number">
+                            <input type="text" name="name" id="name-field" class="form-control" placeholder="Name"> 
                           </div>
                         </div>
-                        <div class="row mb-3">
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="number" name="phone" id="name-field" class="form-control" placeholder="Number">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="email" class="form-control" name="email" id="email-field" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <select class="form-select" name="service" id="serviceSelect">
+                            <option selected disabled >Choose a service...</option>
+                            <option value="gas-hob-repair">Gas Hob Repair</option>
+                            <option value="chimney-repair" selected>Chimney Repair</option>
+                            <option value="gas-stove-repair">Gas Stove Repair</option>
+                            <option value="copper-gas-pipeline">Copper Gas Pipeline</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
                           <div class="col-sm-12">
-                            <input type="email" class="form-control input" id="number" placeholder="Email">
+                            <textarea type="text" class="input w-100" id="message-field" name="message" placeholder="Enter Your Text Here!" style="height:95px;"></textarea>
                           </div>
-                        </div>
-                        <div class="row mb-3">
+                      </div>
+                      <div class="row mb-3">
                           <div class="col-sm-12">
-                            <select class="form-select" id="serviceSelect">
-                              <option selected disabled>Choose a service...</option>
-                              <option value="gas-hob-repair">Gas Hob Repair</option>
-                              <option value="chimney-repair">Chimney Repair</option>
-                              <option value="gas-stove-repair" selected>Gas Stove Repair</option>
-                              <option value="copper-gas-pipeline">Copper Gas Pipeline</option>
-                            </select>
+                              <button type="submit" class="btn btn-primary submit-btn w-100">SUBMIT DETAILS</button>
                           </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <textarea name="text" class="input w-100" id="" placeholder="Enter Your Text Here!" style="height:95px;"></textarea>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                                <button type="submit" class="btn btn-primary submit-btn w-100">SUBMIT DETAILS</button>
-                            </div>
-                        </div>
-                        
-                       
-                      </form>
+                      </div>
+                      
+                     
+                    </form>
                   </div>
 
             </div>
@@ -341,11 +341,12 @@
         <div class="col-lg-2 footer-links">
           <h4>Our Services</h4>
           <ul>
+            <li><a href="gas-hob-repair.html"><i class="bi bi-chevron-right"></i>Gas Hobs Repair</a></li>
             <li><a href="gas-stove-repair.html"><i class="bi bi-chevron-right"></i>Gas Stoves Repair</a></li>
+            <li><a href="gas-cooktop-repair.html"><i class="bi bi-chevron-right"></i>Gas Cooktop Repair</a></li>
             <li><a href="chimney-repair.html"><i class="bi bi-chevron-right"></i>Chimneys Repair</a></li>
-            <li><a href="gas-hob-repair.html"><i class="bi bi-chevron-right"></i>Hobs Repair</a></li>
-            <li><a href="gas-cooktop-repair.html"><i class="bi bi-chevron-right"></i>Electric Applicance Repair</a></li>
-            <li><a href="copper-gas-pipeline.html"><i class="bi bi-chevron-right"></i>Cooking Ranges Repair</a></li>
+            <li><a href="micro-oven-repair.html"><i class="bi bi-chevron-right"></i>Micro Oven Repair</a></li>
+            <li><a href="microwave-repair.html"><i class="bi bi-chevron-right"></i>Microwave Repair</a></li>
           </ul>
         </div>
 
