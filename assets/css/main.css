@@ -180,7 +180,7 @@ h6 {
   --background-color: rgb(255 255 255);
 }
 .fixed-top{
-  margin-top: 47px;
+  margin-top: 50px;
 }
 /* header top */
 
@@ -210,12 +210,12 @@ h6 {
 }
 .header-top-contact ul li{
   list-style: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .header-top-contact ul li span{
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
 }
 .header-top-social a{
@@ -238,7 +238,7 @@ h6 {
   text-transform: uppercase;
 }
 .header-center-text p a{
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
@@ -284,9 +284,13 @@ h6 {
   font-size: 15px;
 }
 
+#navmenu{
+  padding-left: 113px;
+}
+
 @media (max-width: 768px) {
   .fixed-top {
-    margin-top: 107px;
+    margin-top: 100px;
 }
 .banner-main{
   margin-top: 125px;
@@ -340,7 +344,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: color-mix(in srgb, var(--nav-color), transparent 20%);
-    font-size: 15px;
+    font-size: 18px;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -591,6 +595,15 @@ h6 {
   .face p {
     font-size: 13px;
 }
+
+.main-headrer-sec {
+  justify-content: space-between;
+}
+
+#navmenu {
+  padding-left: 113px;
+}
+
 }
 
 /*--------------------------------------------------------------
@@ -1189,12 +1202,12 @@ section,
 .contact-btn{
   border: 1px solid #f2ce00;
   background: #f2ce00;
-  padding: 10px 8px;
+  padding: 8px;
   border-radius: 5px;
 }
 .contact-btn a{
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /*--------------------------------------------------------------
@@ -1488,6 +1501,13 @@ section,
 
 .portfolio .portfolio-filters li:last-child {
   margin-right: 0;
+}
+
+@media (max-width: 568px) {
+
+  .banner-main {
+    margin-top: 85px;
+}
 }
 
 @media (max-width: 575px) {
