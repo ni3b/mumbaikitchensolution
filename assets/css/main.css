@@ -344,7 +344,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: color-mix(in srgb, var(--nav-color), transparent 20%);
-    font-size: 18px;
+    font-size: 22px;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -601,7 +601,7 @@ h6 {
 }
 
 #navmenu {
-  padding-left: 113px;
+  padding-left: 57px;
 }
 
 }
@@ -1206,7 +1206,7 @@ section,
   border-radius: 5px;
 }
 .contact-btn a{
-  color: #ffffff;
+  color: #000;
   font-size: 16px;
 }
 
