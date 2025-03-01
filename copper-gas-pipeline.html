@@ -113,7 +113,7 @@
           </li>
           <li><a href="index.html#portfolio">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <button class="contact-btn"><a href="contact.html">Book Visit</a></button>
+          <button class="contact-btn"><a href="contact.html">Book Your Visit</a></button>
         </ul>
         
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -179,20 +179,35 @@
                     <div class="HeadingT1">
                         <h5>Book an Appointment</h5>
                     </div>
-                    <form class="booking-form" action="https://vsautomation.tech/assets/mail/send-email.php" method="post">
+                    <form id="bookingForm" class="booking-form" action="https://opex-test.kusumgar.com/mail/send-email.php" method="post">
                       <div class="row mb-3">
                           <div class="col-sm-12">
-                            <input type="text" name="name" id="name-field" class="form-control" placeholder="Name"> 
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name"> 
+                            <small class="text-danger error-message" id="nameError"></small>
                           </div>
                         </div>
                       <div class="row mb-3">
                         <div class="col-sm-12">
-                          <input type="number" name="phone" id="name-field" class="form-control" placeholder="Number">
+                          <input type="text" name="phone" id="phone" class="form-control" placeholder="Number">
+                          <small class="text-danger error-message" id="phoneError"></small>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col-sm-12">
-                          <input type="email" class="form-control" name="email" id="email-field" placeholder="Email">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                          <small class="text-danger error-message" id="emailError"></small>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="text" name="address" id="address" class="form-control" placeholder="Address">
+                          <small class="text-danger error-message" id="addressError"></small>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="Zipcode">
+                          <small class="text-danger error-message" id="zipcodeError"></small>
                         </div>
                       </div>
                       <div class="row mb-3">
@@ -200,15 +215,19 @@
                           <select class="form-select" name="service" id="serviceSelect">
                             <option selected disabled >Choose a service...</option>
                             <option value="gas-hob-repair">Gas Hob Repair</option>
-                            <option value="chimney-repair" selected>Chimney Repair</option>
+                            <option value="chimney-repair" >Chimney Repair</option>
+                            <option value="gas-cooktop-repair" selected>Gas Cooktop Repair</option>
                             <option value="gas-stove-repair">Gas Stove Repair</option>
-                            <option value="copper-gas-pipeline">Copper Gas Pipeline</option>
+                            <option value="Micro Oven Repair">Micro Oven Repair</option>
+                            <option value="Microwave Repair">Microwave Repair</option>
                           </select>
+                          <small class="text-danger error-message" id="serviceError"></small>
                         </div>
                       </div>
                       <div class="row mb-3">
                           <div class="col-sm-12">
-                            <textarea type="text" class="input w-100" id="message-field" name="message" placeholder="Enter Your Text Here!" style="height:95px;"></textarea>
+                            <textarea type="text" class="input w-100" id="message" name="message" placeholder="Enter Your Text Here!" style="height:95px;"></textarea>
+                            <small class="text-danger error-message" id="messageError"></small>
                           </div>
                       </div>
                       <div class="row mb-3">

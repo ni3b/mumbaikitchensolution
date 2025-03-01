@@ -129,7 +129,7 @@
             <div class="banner-content position-absolute top-50 translate-middle-y text-white text-start">
               <div class="container service-banner-title">
                 <h1 class="display-4 fw-bold aslider--title mb-30 Font501 text-white">GAS STOVE REPAIR</h1>
-                <button class="contact-btn"><a href="contact.html">Book Visit</a></button>
+                <button class="contact-btn"><a href="contact.html">Book Your Visit</a></button>
               </div>
             </div>
           </div>
@@ -186,20 +186,35 @@
                     <div class="HeadingT1">
                         <h5>Book an Appointment</h5>
                     </div>
-                    <form class="booking-form" action="https://vsautomation.tech/assets/mail/send-email.php" method="post">
+                    <form id="bookingForm" class="booking-form" action="https://opex-test.kusumgar.com/mail/send-email.php" method="post">
                       <div class="row mb-3">
                           <div class="col-sm-12">
-                            <input type="text" name="name" id="name-field" class="form-control" placeholder="Name"> 
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name"> 
+                            <small class="text-danger error-message" id="nameError"></small>
                           </div>
                         </div>
                       <div class="row mb-3">
                         <div class="col-sm-12">
-                          <input type="number" name="phone" id="name-field" class="form-control" placeholder="Number">
+                          <input type="text" name="phone" id="phone" class="form-control" placeholder="Number">
+                          <small class="text-danger error-message" id="phoneError"></small>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col-sm-12">
-                          <input type="email" class="form-control" name="email" id="email-field" placeholder="Email">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                          <small class="text-danger error-message" id="emailError"></small>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="text" name="address" id="address" class="form-control" placeholder="Address">
+                          <small class="text-danger error-message" id="addressError"></small>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="Zipcode">
+                          <small class="text-danger error-message" id="zipcodeError"></small>
                         </div>
                       </div>
                       <div class="row mb-3">
@@ -208,15 +223,18 @@
                             <option selected disabled >Choose a service...</option>
                             <option value="gas-hob-repair">Gas Hob Repair</option>
                             <option value="chimney-repair" >Chimney Repair</option>
+                            <option value="gas-cooktop-repair" >Gas Cooktop Repair</option>
                             <option value="gas-stove-repair" selected>Gas Stove Repair</option>
                             <option value="Micro Oven Repair">Micro Oven Repair</option>
                             <option value="Microwave Repair">Microwave Repair</option>
                           </select>
+                          <small class="text-danger error-message" id="serviceError"></small>
                         </div>
                       </div>
                       <div class="row mb-3">
                           <div class="col-sm-12">
-                            <textarea type="text" class="input w-100" id="message-field" name="message" placeholder="Enter Your Text Here!" style="height:95px;"></textarea>
+                            <textarea type="text" class="input w-100" id="message" name="message" placeholder="Enter Your Text Here!" style="height:95px;"></textarea>
+                            <small class="text-danger error-message" id="messageError"></small>
                           </div>
                       </div>
                       <div class="row mb-3">
@@ -387,7 +405,8 @@
           <p><span style="color: #f2ce00;">MUMBAI KITCHEN SOLUTION</span> is an home appliance service provider for out of warranty products</p>
         </div>
       </div>
-      <p>© <span>Copyright 2024</span>   <span>Mumbai Kitchen Solution. All Rights Reserved</span></p>
+      <p>© <span>Copyright 2025</span>   <span>Mumbai Kitchen Solution. All Rights Reserved</span></p>
+      <p style="color: #000;"><span><a style="color: #000;" href=" https://marketingfuse.in/">Marketing by MarketingFuse</a></span></p>
       <div class="credits">
         For Appliances Repair Call Now!! 
       </div>
@@ -414,6 +433,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="assets/js/bookingVaildation.js"></script>
 
   <script src="assets/js/owl.carousel.js"></script>
   <script src="assets/js/timerowlcarousel.js"></script>
