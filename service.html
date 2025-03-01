@@ -192,7 +192,7 @@
             <div class="content">
               <h3>Gas Stoves</h3>
               <p>Gas stoves provide instant heat control, efficient cooking, durable design, sleek appearance, and easy-to-clean surfaces.</p>
-              <a href="gas-stove-repair.html">Book Gas Stoves Repair Now</a>
+              <a href="gas-stove-repair.html">Learn More</a>
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@
             <div class="content">
               <h3>Chimneys</h3>
               <p>Chimneys ventilate smoke, gases, and fumes, improving air quality, ensuring safety, and enhancing home aesthetics effectively</p>
-              <a href="chimney-repair.html">Book Chimneys Repair Now</a>
+              <a href="chimney-repair.html">Learn More</a>
             </div>
           </div>
         </div>
@@ -214,7 +214,7 @@
             <div class="content">
               <h3>Hobs</h3>
               <p>Hobs offer modern cooking solutions with efficient heat control, sleek designs, easy cleaning, durability, and space-saving features.</p>
-              <a href="gas-hob-repair.html">Book Hobs Repair Now</a>
+              <a href="gas-hob-repair.html">Learn More</a>
             </div>
           </div>
         </div>
@@ -224,7 +224,7 @@
             <div class="content">
               <h3>Micro Ovens</h3>
               <p>Electric appliances simplify tasks, save time, enhance efficiency, provide convenience, modern design, energy savings, and durability.</p>
-              <a href="micro-oven-repair.html">Book Electric Repair Now</a>
+              <a href="micro-oven-repair.html">Learn More</a>
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@
             <div class="content">
               <h3>Cooking ranges</h3>
               <p>Cooking ranges combine ovens and stovetops, offering versatile cooking, efficient heat control, durability, modern design, and convenience.</p>
-              <a href="gas-cooktop-repair.html">Book Cooking Repair Now</a>
+              <a href="gas-cooktop-repair.html">Learn More</a>
             </div>
           </div>
         </div>
@@ -246,7 +246,7 @@
             <div class="content">
               <h3>Microwave</h3>
               <p>Microwave ovens provide quick, efficient cooking with even heating, user-friendly controls, energy efficiency, and compact, modern designs.</p>
-              <a href="microwave-repair.html">Book Microwave Repair Now</a>
+              <a href="microwave-repair.html">Learn More</a>
             </div>
           </div>
         </div>
@@ -277,46 +277,65 @@
                     <div class="HeadingT1">
                         <h5>Book an Appointment</h5>
                     </div>
-                    <form class="booking-form">
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <input type="text" class="form-control input" id="inputEmail3" placeholder="Name"> 
-                            </div>
-                          </div>
-                        <div class="row mb-3">
+                    <form id="bookingForm" class="booking-form" action="https://opex-test.kusumgar.com/mail/send-email.php" method="post">
+                      <div class="row mb-3">
                           <div class="col-sm-12">
-                            <input type="number" class="form-control input" id="inputEmail3" placeholder="Number">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name"> 
+                            <small class="text-danger error-message" id="nameError"></small>
                           </div>
                         </div>
-                        <div class="row mb-3">
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="text" name="phone" id="phone" class="form-control" placeholder="Number">
+                          <small class="text-danger error-message" id="phoneError"></small>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                          <small class="text-danger error-message" id="emailError"></small>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="text" name="address" id="address" class="form-control" placeholder="Address">
+                          <small class="text-danger error-message" id="addressError"></small>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="Zipcode">
+                          <small class="text-danger error-message" id="zipcodeError"></small>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <select class="form-select" name="service" id="serviceSelect">
+                            <option selected disabled >Choose a service...</option>
+                            <option value="gas-hob-repair">Gas Hob Repair</option>
+                            <option value="chimney-repair">Chimney Repair</option>
+                            <option value="gas-cooktop-repair" >Gas Cooktop Repair</option>
+                            <option value="gas-stove-repair">Gas Stove Repair</option>
+                            <option value="Micro Oven Repair">Micro Oven Repair</option>
+                            <option value="Microwave Repair">Microwave Repair</option>
+                          </select>
+                          <small class="text-danger error-message" id="serviceError"></small>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
                           <div class="col-sm-12">
-                            <input type="email" class="form-control input" id="number" placeholder="Email">
+                            <textarea type="text" class="input w-100" id="message" name="message" placeholder="Enter Your Text Here!" style="height:95px;"></textarea>
+                            <small class="text-danger error-message" id="messageError"></small>
                           </div>
-                        </div>
-                        <div class="row mb-3">
+                      </div>
+                      <div class="row mb-3">
                           <div class="col-sm-12">
-                            <select class="form-select" id="serviceSelect">
-                              <option selected disabled>Choose a service...</option>
-                              <option value="gas-hob-repair">Gas Hob Repair</option>
-                              <option value="chimney-repair">Chimney Repair</option>
-                              <option value="gas-stove-repair">Gas Stove Repair</option>
-                              <option value="copper-gas-pipeline">Copper Gas Pipeline</option>
-                            </select>
+                              <button type="submit" class="btn btn-primary submit-btn w-100">SUBMIT DETAILS</button>
                           </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <textarea name="text" class="input w-100" id="" placeholder="Enter Your Text Here!" style="height:95px;"></textarea>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                                <button type="submit" class="btn btn-primary submit-btn w-100">SUBMIT DETAILS</button>
-                            </div>
-                        </div>
-                        
-                       
-                      </form>
+                      </div>
+                      
+                     
+                    </form>
                   </div>
 
             </div>
@@ -469,7 +488,7 @@
             <p><span style="color: #f2ce00;">MUMBAI KITCHEN SOLUTION</span> is an  home appliance service provider for out of warranty products</p>
           </div>
           <p>© <span>Copyright 2025</span>   <span>Mumbai Kitchen Solution. All Rights Reserved</span></p>
-          <p style="color: #000;">Marketing by MarketingFuse - </span>   <span><a style="color: #000;" href=" https://marketingfuse.in/">https://marketingfuse.in/</a></span></p>
+          <p style="color: #000;"></span>   <span><a style="color: #000;" href=" https://marketingfuse.in/">Marketing by MarketingFuse</a></span></p>
           <div class="credits">
             For Appliances Repair Call Now!! 
           </div>
@@ -496,6 +515,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="assets/js/bookingVaildation.js"></script>
 
   <script src="assets/js/owl.carousel.js"></script>
   <script src="assets/js/timerowlcarousel.js"></script>
