@@ -64,5 +64,8 @@ $(document).ready(function () {
     $("#zipcode").blur(() => validateField("zipcode", "zipcodeError", "Zip code is required.", /^[0-9]+$/));
     $("#serviceSelect").change(validateService);
     $("#message").blur(() => validateField("message", "messageError", "Message is required."));
+
+    
+  
   });
   
